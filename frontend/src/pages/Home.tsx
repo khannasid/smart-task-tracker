@@ -1,4 +1,6 @@
 import React from "react";
+import { Button } from "../components/ui/button";
+import {Link} from "react-router-dom";
 
 export default function Home(): React.JSX.Element {
     return (
@@ -11,12 +13,9 @@ export default function Home(): React.JSX.Element {
           <p className="text-lg text-gray-600 mb-8">
             Smart Task Tracker helps you plan, track, and analyze your work with ease.
           </p>
-          <a
-            href="/signup"
-            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700"
-          >
+          <Link to="/signup"><Button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700">
             Get Started
-          </a>
+            </Button></Link>
         </section>
 
         <section className="bg-white py-20">
