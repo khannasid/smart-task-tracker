@@ -12,9 +12,10 @@ const Register: React.FC = () => {
     // console.log("Register data:", data);
     // TODO: call backend API here
     // Simulating a successful registration by setting a token
+    console.log("Simulating registration with token", data);
     login("123456789");
     navigate(from, { replace: true });// Redirect to the intended page after registration
-    
+
     // This is a placeholder. In a real application, you would handle the response from the backend API here,
     // such as checking for errors or redirecting the user upon successful registration.
   };
