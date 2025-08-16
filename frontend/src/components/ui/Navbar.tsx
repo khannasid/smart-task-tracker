@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Button } from "./button";
 import {Link} from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 import { useAuth } from "../AuthContext";
 
 export default function Navbar(): React.JSX.Element {
@@ -13,13 +12,13 @@ export default function Navbar(): React.JSX.Element {
           <h1 className="text-2xl font-bold text-stone-700">Smart Task Tracker</h1>
           </a>
           <nav className="space-x-4">
-            <a href="#features" className="text-gray-600 text-stone-700">
+            <a href="#features" className="text-gray-600 hover:text-gray-400">
               Features
             </a>
-            <a href="#pricing" className="text-gray-600 text-stone-700">
+            <a href="#pricing" className="text-gray-600 hover:text-gray-400">
               Pricing
             </a>
-            <a href="#contact" className="text-gray-600 text-stone-700">
+            <a href="#contact" className="text-gray-600 hover:text-gray-400">
               Contact
             </a>
             {token ?
